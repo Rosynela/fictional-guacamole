@@ -1,0 +1,71 @@
+omi Kont - Cu alexandra sa Vb cu Ionut sa intre si sa ia o copie a programului astfel incat sa o pot lune eu pe stick la mine. 
+
+- facturi emise / iesite / clienti
+
+nr fact, data fact, serie fact, emitent, produs-linie fact, um, cant, pret1, pret2, tva%, tvaVal
+====
+== necesar: lista cu produse si corespondentul lor in explicatii predefinite. 
+
+1. login
+	user si pass
+	enter --- click buton
+	ok sau enter sau wait 
+	
+2. lista firme in aplicatie
+	- alegem firma pe care o lucram si anul -- avem search cu collapse la o singura linie + enter
+	- alegem luna din factura tot timpul
+	- clienti --> livrari clienti (mo) --> Adaugare livrari clienti 
+	
+3. introducere o factura
+	3.1 client existent
+	- enter = deschide lista cu toti clientii existenti 
+	- type into search pe coloana CUI => single option - un singur client unic dupa cui 
+	- enter si se face select + urmatoarea casuta
+	- date factura (antet):serie, numar, data emitere, data scadenta (nr zile termen plata)
+	- date factura (for each line): 
+		- ALT + A = se creaza linie noua  
+		- ? enter => se deschide lista cu explicatii predefinite (sintetice) - daca e cherestea , la val TVA se deschide popup si se alege taxare inversa cu Materie Lemnoasa din dropdown
+		- (daca nu e explictie se adauga simplu)
+		- se poate schimba contul din linie daca e cazul sa nu adaugam alta aexplicatie
+		- trebuie solutie de mapare linii factura cu conturile contabile ()
+
+	- salvare si de la cap
+	3.2 client nou -- de detaliat cu Alexandra 
+	- la client nou PF neaparat JUDET (daca nu avem punem BUCURESTI). 
+
+==========================================
+
+
+
+cheltuieli:
+-- operarorul citeste bon/factura/doc intrare -- si inregistreaza basic info 
+=== cum facem inregistrare facturi fizic..? 
+	- OCR pe NIR-uri
+	- Introducere date partiale
+	- Asistare operator
+	- Trebuie calculat timpul la EFT .. NEAPARAT. 
+	- avem template-uri de facturi scanabile OK. 
+	- avem NIR-uri scanabile OK
+	- Bonurile de consum -- ? de analizat
+	- .. pasii aici : 1. factura (achizitie) ---> 2. NIR --> Bon Consum
+
+-- discutie cu UIPath pe OCR - Scan cu asistenta over night -- cu input
+
+================================================
+
+
+- Jurnale TVA + srapoparte automate 
+- Suzie primeste mail din intern si face la comnda
+- calcul automat IMPOZITE - venit / profit dupa reguli 
+- trimitere automata la 30 ale lunii cu un set de situatii ;a inchiderea lunii
+- in balanta de verificare : == conturile de contributii la salarii + cont impozit profit + cont TVA ==> sa instiinteze clientii la trimiterea din 30 ca au sold de plata in conturi.
+===============================================
+
+Termene scadente - pentru clienti si furnizori, la 30 ale lunii verifica scadentele si notifica clientul ca a avut urmatoarele scadente (plata sau incasare). -- se poate face automat ca proces de nformare clienti 
+
+- monitorizare mailuri - revine la mailuri care nu au raspuns timp de x zile. sau face forward si ami trimite o data mailul tuturor din mail.
+
+================================================
+
+HR - state de plata ==> programul ANAF de state de plata 
+== pentru pontaj - automatiare conform ce primeste de la angajat intern. CM-urile le trateaza cu angajat manual pt ca nu  

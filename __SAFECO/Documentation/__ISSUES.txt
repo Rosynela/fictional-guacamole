@@ -1,0 +1,3 @@
+1. Coloane obligatorii in exporturi
+2. Formatare numerice in exporturi ==> separatorul de zecimale si de mii sa fie forever la fel
+3. Numele coloanelor din rapoarte sa fie aceleasi mereu
